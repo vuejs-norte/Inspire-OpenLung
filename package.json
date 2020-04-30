@@ -5,7 +5,8 @@
     "deploy": "gh-pages -d .vuepress/dist"
   },
   "dependencies": {
-    "vuepress": "^1.4.1"
+    "vuepress": "^1.4.1",
+    "vuepress-theme-yuu": "^2.2.1"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
@@ -13,11 +14,10 @@
   },
   "nodemonConfig": {
     "watch": [
-        "*",
-        ".vuepress",
-        "docs"
+      "*",
+      ".vuepress",
+      "docs"
     ],
     "ext": "md, MD, js, vue"
   }
 }
-
