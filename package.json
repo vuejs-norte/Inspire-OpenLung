@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "nodemon --exec vuepress dev",
+    "build": "vuepress build",
+    "deploy": "gh-pages -d .vuepress/dist"
+  },
+  "dependencies": {
+    "vuepress": "^1.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "nodemonConfig": {
+    "watch": [
+        "*",
+        ".vuepress",
+        "docs"
+    ],
+    "ext": "md, MD, js, vue"
+  }
+}
+
